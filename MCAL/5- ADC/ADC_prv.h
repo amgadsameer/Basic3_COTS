@@ -17,5 +17,8 @@
 #define EIGHT_BITS					1u
 #define TEN_BITS					2u
 
+#define IDLE						0u
+#define BUSY						1u
+
 
 #endif

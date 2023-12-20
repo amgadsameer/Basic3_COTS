@@ -4,6 +4,8 @@
 
 void ADC_voidInit(void);
 
-uint8 ADC_u8GetChannelReading(uint8 Copy_u8Channel);
+uint8 ADC_u8StartConversionSynch(uint8 Copy_u8Channel, uint16* Copy_pu16Result);
+
+uint8 ADC_u8StartConversionAsynch(uint8 Copy_u8Channel, uint16* Copy_pu16Result, void(*Copy_pvNotificationFunc)(void));
 
 #endif
